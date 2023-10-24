@@ -216,3 +216,10 @@
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
 }
+.danger{
+  color: red;
+}
+
+.success{
+  color: rgb(11, 203, 101);
+}

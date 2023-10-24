@@ -709,46 +709,54 @@
                             id="contact">
                             <h1 class="title pb-3 mb-5">Contact Me</h1>
                             <p class="mb-4">
-                                <form>
+                                <form id="contactForm"
+                                    action="Javascript:void(0);">
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="form-floating">
-                                                <input type="text"
+                                                <input type="text" name="name"
                                                     class="form-control border-0 bg-secondary"
                                                     id="name"
                                                     placeholder="Your Name">
                                                 <label for="name">Your Name</label>
+                                                <p id="errorName"></p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-floating">
-                                                <input type="email"
+                                                <input type="email" name="email"
                                                     class="form-control border-0 bg-secondary"
                                                     id="email"
                                                     placeholder="Your Email">
                                                 <label for="email">Your Email</label>
+                                                <p id="errorEmail"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
                                                 <input type="text"
+                                                    name="subject"
                                                     class="form-control border-0 bg-secondary"
                                                     id="subject"
                                                     placeholder="Subject">
                                                 <label for="subject">Subject</label>
+                                                <p id="errorSubject"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea
+                                                <textarea name="message"
                                                     class="form-control border-0 bg-secondary"
                                                     placeholder="Leave a message here"
                                                     id="message"
                                                     style="height: 200px"></textarea>
                                                 <label for="message">Message</label>
+                                                <p id="errorMessage"></p>
                                             </div>
                                         </div>
                                         <div class="col-12">
+                                            <p id="error-message"></p>
+                                            <p id="success"></p>
                                             <button
                                                 class="btn btn-primary w-100 py-3"
                                                 type="submit">Send Message</button>
@@ -814,8 +822,7 @@
                 <script src="lib/lightbox/js/lightbox.min.js"></script>
 
                 <!-- Contact Javascript File -->
-                <script src="mail/jqBootstrapValidation.min.js"></script>
-                <script src="mail/contact.js"></script>
+                <script src="js/contact.js"></script>
 
                 <!-- Template Javascript -->
                 <script src="js/main.js"></script>

@@ -223,3 +223,7 @@
 .success{
   color: rgb(11, 203, 101);
 }
+
+.project-name{
+  font-size: 40px;
+}
